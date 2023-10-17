@@ -3,13 +3,33 @@
     --grey: #3F3F3F;
     --yellow: #FFF51B;
     --white: #FFFFFF;
+    --light-grey: #D9D9D9;
   }
 
   /* Poppins font */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
   
-  body {
+  body, p, h2 {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  section {
+    min-height: 75vh;
+    padding: 50px;
   }
   .black-text {
     color: var(--black);
@@ -18,6 +38,12 @@
   .grey-text {
     color: var(--grey);
   }
+
+  .light-grey-text {
+    color: var(--light-grey);
+  }
+
+
   
   .yellow-text {
     color: var(--yellow);
@@ -35,15 +61,51 @@
     background-color: var(--black);
   }
 
-
+/* HERO */
 
 header#hero {
     background-image: url('images/hero_img.png');
-    height: 75vh;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+}
+
+header#hero img {
+    filter: invert(100%) sepia(2%) saturate(3192%) hue-rotate(209deg) brightness(112%) contrast(70%);
+}
+
+header#hero p {
+    color: var(--light-grey);
+}
+
+/* CLOCK */
+
+#clock p {
+    font-size: 24px;
+}
+
+#clock span {
+    color: var(--yellow);
+}
+
+/* ABOUT */
+
+.video {
+    max-width: 100%;
+    margin-top: 50px;
 }
 
 
 
+
+/* HELP */
 
 .patagonia-logo-svg {
     filter: invert(88%) sepia(85%) saturate(2467%) hue-rotate(338deg) brightness(107%) contrast(101%);
