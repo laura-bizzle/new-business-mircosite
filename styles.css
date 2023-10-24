@@ -8,8 +8,10 @@
 
   /* Poppins font */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-  
-  body, p, h2 {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+  body, h2 {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -18,7 +20,7 @@
   p {
     font-size: 15px;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   h2 {
@@ -259,5 +261,16 @@ img#product.show {
   transform: translateX(0) translateY(0);
   left: 0;
   opacity: 1;
+}
+
+/* STATS */ 
+
+.percentage {
+  font-size: 96px;
+  font-weight: bold;
+  color: var(--yellow); 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; 
+  line-height: 1;
 }
 

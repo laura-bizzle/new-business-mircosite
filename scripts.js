@@ -1,4 +1,5 @@
 
+//
 
 // CLOCK FUNCTIONALITY
 const clockHand = document.querySelector(".clock-hand");
