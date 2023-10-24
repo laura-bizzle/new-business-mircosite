@@ -11,8 +11,8 @@
   
   body, p, h2 {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
   }
 
   p {
@@ -211,7 +211,30 @@ svg.arrow-animation {
 
 /* HELP */
 
+.help-title {
+  margin-bottom: 0;
+}
+
 .patagonia-logo-svg {
     filter: invert(88%) sepia(85%) saturate(2467%) hue-rotate(338deg) brightness(107%) contrast(101%);
-  max-width: 50px;
+  max-width: 95px;
+}
+
+.screens-wrap {
+  position: relative;
+  height: 500px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  
+}
+
+img#basket {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+img#product {
+  position: absolute;
 }

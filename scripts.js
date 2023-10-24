@@ -38,4 +38,6 @@ const arrowObserver = new IntersectionObserver((entries) => {
 
 const arrowElement = document.querySelector('.arrow-animation');
 
-arrowObserver.observe(arrowElement)
+arrowObserver.observe(arrowElement);
+
+//SCREEN FUNCTION
