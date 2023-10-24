@@ -53,9 +53,13 @@ const screenObserver = new IntersectionObserver((entries) => {
     }
   })
 }, {
-  threshold: 0.7
+  threshold: 0.7,
+  rootMargin: "0px",
+  root: null
+
 });
 
 const screenElements = document.querySelector('.screens-wrap')
 
 screenObserver.observe(screenElements);
+
