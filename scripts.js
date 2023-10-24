@@ -41,3 +41,21 @@ const arrowElement = document.querySelector('.arrow-animation');
 arrowObserver.observe(arrowElement);
 
 //SCREEN FUNCTION
+
+const screenObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      console.log('screens visible');
+      entry.target.querySelectorAll('.screen').forEach((el) => {
+        el.classList.add('show');
+      }
+      )
+    }
+  })
+}, {
+  threshold: 0.7
+});
+
+const screenElements = document.querySelector('.screens-wrap')
+
+screenObserver.observe(screenElements);

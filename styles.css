@@ -228,13 +228,26 @@ svg.arrow-animation {
   
 }
 
+.screen {
+  transition: all 1s ease;
+}
+
 img#basket {
   position: absolute;
-  right: 0;
+  right: -100%;
   bottom: 0;
   z-index: 1;
 }
 
+img#basket.show {
+  right: 0px;
+}
+
 img#product {
   position: absolute;
+  left: -100%;
+}
+
+img#product.show {
+  left: 0px;
 }
