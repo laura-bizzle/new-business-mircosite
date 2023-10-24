@@ -68,6 +68,7 @@ header#hero {
     height: 70vh;
     display: grid;
     place-items: center;
+    background-repeat: no-repeat;
 }
 
 .logo-wrap {
@@ -140,23 +141,25 @@ header#hero p {
     margin-top: 50px;
 }
 
+/* ARROW ANIMATION */
 
 svg.arrow-animation {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    
   }
   
   .loop {
-    stroke-width: 5;
-    stroke: #000; /* Set the initial color of the path */
+    /* Set the initial color of the path */
     fill: transparent;
+    stroke: none;
+      }
+
+  .loop-play {
+    stroke-width: 5;
+    stroke: #000; 
     transition: stroke 4s linear; /* Transition to fill the stroke */
     animation-name: loopAnimation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
-    /* animation-iteration-count: infinite; Define the loop animation */
   }
   
   @keyframes loopAnimation {
@@ -177,10 +180,12 @@ svg.arrow-animation {
   
   .arrow-head {
     opacity: 0;
+  }
+
+  .arrow-head-play {
     animation-name: showArrow;
     animation-duration: 5s;
     animation-timing-function: linear;
-    /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
   }
   

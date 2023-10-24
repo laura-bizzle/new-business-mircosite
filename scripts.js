@@ -19,3 +19,23 @@ function makeClockHand() {
 }
 
 setInterval(makeClockHand, 1000);
+
+// ARROW FUNCTIONALITY 
+
+const arrowObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log('arrow visible');
+        entry.target.querySelector('.loop').classList.add('loop-play');
+        entry.target.querySelector('.arrow-head').classList.add('arrow-head-play');
+      } else {
+          //entry.target.querySelector('.inner-wrap').classList.remove('show')
+      }
+  });
+}, {
+  threshold: 0.7,  
+});
+
+const arrowElement = document.querySelector('.arrow-animation');
+
+arrowObserver.observe(arrowElement)
