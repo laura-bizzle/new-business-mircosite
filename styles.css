@@ -87,6 +87,12 @@ header#hero p {
 
 /* CLOCK */
 
+#clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #clock p {
     font-size: 24px;
 }
@@ -94,6 +100,38 @@ header#hero p {
 #clock span {
     color: var(--yellow);
 }
+
+.clock-hand {
+    width: 1px;
+    height: 87px;
+    background: blue;
+    position: absolute;
+    border-radius: 9px;
+    left: 50%;
+    right: 50%;
+    top: 36px;
+    transform-origin: bottom;
+  }
+  
+  .clock-hand:after {
+    content: "";
+    width: 9px;
+    height: 87px;
+    background: #fff51b;
+    position: absolute;
+    left: -4px;
+    border-radius: 9px;
+    transform-origin: bottom;
+  } 
+  
+  .clock {
+    width: 246px;
+    height: 246px;
+    border-radius: 100%;
+    /*   background: pink; */
+    position: relative;
+    margin-bottom: 50px;
+  }
 
 /* ABOUT */
 
@@ -118,7 +156,7 @@ svg.arrow-animation {
     animation-name: loopAnimation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; /* Define the loop animation */
+    /* animation-iteration-count: infinite; Define the loop animation */
   }
   
   @keyframes loopAnimation {
@@ -142,7 +180,7 @@ svg.arrow-animation {
     animation-name: showArrow;
     animation-duration: 5s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
   }
   
