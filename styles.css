@@ -234,25 +234,30 @@ svg.arrow-animation {
 
 img#basket {
   position: absolute;
-  transform: translateX(150%) translateY(50%);
+  transform: translateX(110%) translateY(50%);
   transition: transform 0.5s ease-in-out;
   bottom: 0;
   z-index: 1;
   right: 0;
+  opacity: 0;
 }
 
 img#basket.show {
   transform: translateX(0) translateY(0);
+  opacity: 1;
 }
 
 img#product {
   position: absolute;
-  transform: translateX(-150%) translateY(50%);
-  transition: all 0.5s ease-in-out;
+  transform: translateX(-110%) translateY(50%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  
 }
 
 img#product.show {
   transform: translateX(0) translateY(0);
   left: 0;
+  opacity: 1;
 }
 
