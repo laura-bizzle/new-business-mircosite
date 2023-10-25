@@ -45,10 +45,7 @@ Buiilt with vanilla JS and html, css.
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
-* [![Javascript][JQuery.com]][Javascript-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+* [![Javascript][Javascript.com]][Javascript-url]
 
 
 <!-- GETTING STARTED -->
@@ -79,7 +76,7 @@ Use go live to preview the live site
    const API_KEY = 'ENTER YOUR API';
    ``` -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
