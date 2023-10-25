@@ -1,10 +1,4 @@
 
-//CLIENT OBJECT 
-
-const clientObject = {
-  name: "Patagonia",
-
-}
 
 //HERO FUNCTION
 
