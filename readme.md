@@ -123,7 +123,7 @@ _For more examples, please refer to the [Figma files](https://example.com)_
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
 
-[Javascript.com]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png
+[Javascript.com]: https://img.shields.io/badge/logo-javascript-blue?logo=javascript
 [Javascript-url]: https://www.javascript.com/ 
 
 * [![JQuery][JQuery.com]][JQuery-url]
