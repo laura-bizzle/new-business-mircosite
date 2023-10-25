@@ -21,13 +21,17 @@ A template to pitch to new business, a more interactive solution to the old scho
     
   </div>
 
+  ## Outstanding to do 
+
+- 
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="images/Project-screenshot.png" alt="Logo" max-width="200px">
 
-Buiilt with vanilla JS and html, css. 
+
+Built with vanilla JS and html, css. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,6 +92,11 @@ _For more examples, please refer to the [Figma files](https://example.com)_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Visual
+
+<img src="images/Project-screenshot.png" alt="Logo" width="200px">
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -124,5 +133,3 @@ _For more examples, please refer to the [Figma files](https://example.com)_
 [Javascript.com]: https://img.shields.io/badge/logo-javascript-blue?logo=javascript
 [Javascript-url]: https://www.javascript.com/ 
 
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![Javascript][JQuery.com]][Javascript-url]
