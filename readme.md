@@ -25,9 +25,7 @@ A template to pitch to new business, a more interactive solution to the old scho
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]()
-
-<img src="images/Project-screenshot.png" alt="Logo" width="200px" height="400px">
+<img src="images/Project-screenshot.png" alt="Logo" max-width="200px">
 
 Buiilt with vanilla JS and html, css. 
 
@@ -37,14 +35,14 @@ Buiilt with vanilla JS and html, css.
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
+<!-- * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
 * [![Svelte][Svelte.dev]][Svelte-url]
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![JQuery][JQuery.com]][JQuery-url] -->
 * [![Javascript][Javascript.com]][Javascript-url]
 
 
