@@ -3,6 +3,7 @@
 const client = {
   name: "Patagonia",
   logo: "images/patagonia_logo.png",
+  heroImg: "images/hero_img.png"
 };
 
 const heroHTML = `
@@ -67,7 +68,7 @@ const helpHTML = `
 
     </div>  
     <div class="main-para">
-        <p >To assess the user experience quality of Patagonia's website, we undertook a comprehensive CRO audit. Our goal was to pinpoint any areas of performance that could be enhanced.</p>
+        <p >To assess the user experience quality of ${client.name}'s website, we undertook a comprehensive CRO audit. Our goal was to pinpoint any areas of performance that could be enhanced.</p>
         <p> This involved a meticulous analysis of your analytics, a deep dive into the user journey funnel, and rigorous usability testing involving 50 participants. Our aim was to uncover valuable insights that could lead to significant improvements for your website.</p>
     </div>
 `
@@ -75,13 +76,14 @@ const helpHTML = `
 const statsHTML = `
     <h2><span class="percentage">42%</span><br>of participants expressed that they faced challenges in assessing clothing sizing accurately</h2>
     <div class="main-para">
-        <p>To assess the user experience quality of Patagonia's website, we undertook a comprehensive CRO audit. Our goal was to pinpoint any areas of performance that could be enhanced. </p>
+        <p>To assess the user experience quality of ${client.name}'s website, we undertook a comprehensive CRO audit. Our goal was to pinpoint any areas of performance that could be enhanced. </p>
         <p>This involved a meticulous analysis of your analytics, a deep dive into the user journey funnel, and rigorous usability testing involving 50 participants. Our aim was to uncover valuable insights that could lead to significant improvements for your website.</p>
     </div>
 `
 
 const heroSection = document.getElementById("hero");
 heroSection.insertAdjacentHTML("afterbegin", heroHTML);
+heroSection.style.backgroundImage = `url(${client.heroImg})`
 
 const clockSection = document.getElementById("clock");
 clockSection.insertAdjacentHTML("afterbegin", clockHTML);
@@ -94,3 +96,4 @@ helpSection.insertAdjacentHTML("afterbegin" , helpHTML)
 
 const statsSection = document.getElementById('stats');
 statsSection.insertAdjacentHTML("afterbegin" , statsHTML);
+

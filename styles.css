@@ -69,7 +69,6 @@
 /* HERO */
 
 header#hero {
-    background-image: url('images/hero_img.png');
     background-size: cover;
     height: 100vh;
     display: grid;

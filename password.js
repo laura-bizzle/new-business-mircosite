@@ -1,4 +1,4 @@
-const correctPassword = "patagonia"; // Set your password here
+const correctPassword = "x"; // Set your password here
 
 document.querySelector('.password-btn').addEventListener('click' , checkPassword);
 document.querySelector('#password-input').addEventListener('keydown', function(event) {
