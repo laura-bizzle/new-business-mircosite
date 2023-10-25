@@ -21,9 +21,9 @@ A template to pitch to new business, a more interactive solution to the old scho
     
   </div>
 
-  ## Outstanding to do 
+## Outstanding to do 
 
-- 
+
 
 
 <!-- ABOUT THE PROJECT -->
