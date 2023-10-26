@@ -84,6 +84,9 @@ const statsHTML = `
 const heroSection = document.getElementById("hero");
 heroSection.insertAdjacentHTML("afterbegin", heroHTML);
 heroSection.style.backgroundImage = `url(${client.heroImg})`
+document.querySelector('.overlay').style.backgroundImage = `url(${client.heroImg})`
+document.querySelector('.overlay').style.background = `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;`
+
 
 const clockSection = document.getElementById("clock");
 clockSection.insertAdjacentHTML("afterbegin", clockHTML);
