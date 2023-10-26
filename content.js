@@ -9,7 +9,7 @@ const client = {
 const heroHTML = `
     <div class="logo-wrap">
         <div class="op-logo"></div>
-        <p class="x">X</p>
+        <p class="x">×</p>
         <img class="pata-logo" src="${client.logo}" alt="${client.name} logo">
     </div>
         <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none"> 
