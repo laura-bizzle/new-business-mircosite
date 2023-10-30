@@ -519,6 +519,28 @@ button.password-btn {
 
 }
 
+/* FOOTER */
+
+footer {
+  height: 200px;
+  display: flex;
+}
+
+footer a {
+  color: var(--yellow);
+}
+
+.footer-link {
+  display: flex ;
+  flex-direction: column;
+}
+
+.footer-logo {
+  background-image: url(/images/OP-Logo-Footer-Yellow.svg);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
 
 @media only screen and (max-width: 800px)  {
   img.video-desktop {
@@ -613,6 +635,19 @@ section#about {
 svg.arrow-animation {
   transform: rotate(185deg);
   align-self: flex-end;
+}
+
+/* STATS */
+
+section#stats {
+  display: flex;
+  gap: 72px;
+  align-items: center;
+}
+
+section#stats h2 {
+  font-size: 24px;
+  max-width: 300px;
 }
 
 }
