@@ -18,6 +18,7 @@ const heroHTML = `
 `;
 
 const clockHTML = `
+    
     <div class="clock">
     <div class="clock-hand"></div>
     <svg xmlns="http://www.w3.org/2000/svg" width="246" height="246" viewBox="0 0 246 246" fill="none">
@@ -92,6 +93,7 @@ document.querySelector('.overlay').style.backgroundImage = `url(${client.heroImg
 document.querySelector('.overlay').style.background = `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;`
 
 
+
 const clockSection = document.getElementById("clock");
 clockSection.insertAdjacentHTML("afterbegin", clockHTML);
 
@@ -103,4 +105,12 @@ helpSection.insertAdjacentHTML("afterbegin" , helpHTML)
 
 const statsSection = document.getElementById('stats');
 statsSection.insertAdjacentHTML("afterbegin" , statsHTML);
+
+
+//scroll to clock 
+const downArrow = document.querySelector('svg.down-arrow')
+downArrow.addEventListener('click' , function() {
+    clockSection.scrollIntoView({behavior: "smooth"})
+})
+
 
