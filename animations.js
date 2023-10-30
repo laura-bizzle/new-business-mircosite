@@ -156,13 +156,19 @@ const screenElements = document.querySelector('.screens-wrap')
 
 screenObserver.observe(screenElements);
 
+//ALL SECTIONS PARAGRAPHS FUNCTION
 
 const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
       if (entry.isIntersecting) {
           entry.target.querySelector('.main-para').classList.add('show');
+          if(entry.target.querySelector('.desktop-para')){
+            entry.target.querySelector('.desktop-para').classList.add('show');
+          }
+         
       } else {
-          entry.target.querySelector('.main-para').classList.remove('show')
+          entry.target.querySelector('.main-para').classList.remove('show');
+         // entry.target.querySelector('.desktop-para').classList.remove('show');
       }
   });
 }, {

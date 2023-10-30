@@ -6,6 +6,8 @@
     --light-grey: #D9D9D9;
   }
 
+    /* HERO */
+
   /* Poppins font */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
@@ -258,7 +260,7 @@ svg#op-svg {
 
 /* ABOUT */
 
-.video {
+.video-mobile {
     max-width: 100%;
     margin-top: 50px;
 }
@@ -268,6 +270,8 @@ svg#op-svg {
   align-self: flex-start;
     margin-top: 20px;
 }
+
+
 
 
 /* ARROW ANIMATION */
@@ -421,6 +425,10 @@ img#product.show {
   margin-top: 20px;
 }
 
+.desktop-para p:nth-child(2) {
+  margin-top: 20px;
+}
+
 
 .show {
   opacity: 1;
@@ -507,8 +515,105 @@ button.password-btn {
   padding: 10px 20px;
   color: var(--black);
   background-color: var(--white);
- 
   border: 1px solid var(--white);
+
+}
+
+
+@media only screen and (max-width: 800px)  {
+  img.video-desktop {
+    display: none;
+  }
+  
+  .desktop-para {
+    display: none;
+  }
+  
+}
+@media only screen and (min-width: 800px)  {
+
+    /* GLOBAL */
+
+  section {
+    padding: 6rem;
+  }
+
+  h2 {
+    font-size: 40px;
+}
+  
+
+  /* HERO */
+
+header#hero {
+  background-position: center;
+}
+
+svg.down-arrow {
+  bottom: 50px;
+}
+
+/* CLOCK */
+
+section#clock {
+  height: 60vh;
+}
+
+
+section#clock p{
+  max-width: 40vw;
+  text-align: center;
+  
+}
+
+/* ABOUT */
+
+img.video-mobile {
+  display: none;
+}
+
+img.video-desktop {
+  width: 100%;
+}
+
+
+.desktop-wrap p {
+  display: none;
+}
+
+.desktop-para {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(130%);
+  transition: all 1s;
+  /* transition-delay: 1s; */
+}
+  
+
+.desktop-para.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+section#about {
+  display: flex;
+}
+
+.desktop-wrap, .desktop-para.show {
+  width: 50%;
+}
+
+.svg-cont {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  max-height: 120px;
+}
+
+svg.arrow-animation {
+  transform: rotate(185deg);
+  align-self: flex-end;
+}
 
 }
 
