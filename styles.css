@@ -12,6 +12,7 @@
 
   section {
     overflow: hidden;
+    padding: 50px;
   }
 
   body, h2 {
@@ -24,6 +25,7 @@
     font-size: 15px;
     line-height: 1.5;
     font-weight: 500;
+    margin: 0;
   }
 
   h2 {
@@ -32,10 +34,10 @@
     margin-bottom: 25px;
   }
 
-  section {
-    min-height: 75vh;
-    padding: 50px;
+  button {
+    cursor: pointer;
   }
+
   .black-text {
     color: var(--black);
   }
@@ -47,8 +49,6 @@
   .light-grey-text {
     color: var(--light-grey);
   }
-
-
   
   .yellow-text {
     color: var(--yellow);
@@ -209,10 +209,13 @@ svg#op-svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #clock p {
     font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 #clock span {
@@ -258,11 +261,25 @@ svg#op-svg {
     margin-top: 50px;
 }
 
+.video-cta {
+  max-width: 170px;
+  align-self: flex-start;
+    margin-top: 20px;
+}
+
+
 /* ARROW ANIMATION */
 
 svg.arrow-animation {
-    
+    max-height: 63px;
   }
+
+
+  .svg-cont {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
   
   .loop {
     /* Set the initial color of the path */
@@ -333,7 +350,7 @@ svg.arrow-animation {
 }
 
 .patagonia-logo-svg {
-  filter: invert(88%) sepia(85%) saturate(2467%) hue-rotate(338deg) brightness(107%) contrast(101%);
+  /* filter: invert(88%) sepia(85%) saturate(2467%) hue-rotate(338deg) brightness(107%) contrast(101%); */
   max-width: 95px;
 }
 
@@ -398,6 +415,11 @@ img#product.show {
   /* transition-delay: 1s; */
 }
 
+.main-para p:nth-child(2) {
+  margin-top: 20px;
+}
+
+
 .show {
   opacity: 1;
   filter: blur(0);
@@ -409,6 +431,8 @@ img#product.show {
 .content {
   display: none; /* Initially hide content */
 }
+
+
 
 .overlay {
   font-family: 'Poppins', sans-serif;
@@ -440,16 +464,28 @@ img#product.show {
   -webkit-text-stroke-color: var(--white);
   fill: var(--black);
   font-size: 36px;
+  max-width: 161px;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+}
+
+.overlay h2 span {
+  color: white;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: var(--white);
 }
 
 
 .overlay-content {
   background: var(--black);
-  padding: 20px;
-  text-align: center;
+  padding: 20px 40px;
+  text-align: left;
   position: relative;
   z-index: 2;
-  width: 80vw;
+  width: 100vw;
+  display: grid;
+  place-content: center;
 }
 
 input[type=password] {
@@ -459,6 +495,7 @@ input[type=password] {
   padding: 10px 20px;
   border: 1px solid var(--white);
   background-color: var(--black);
+  color: white;
 }
 
 button.password-btn {
@@ -472,3 +509,5 @@ button.password-btn {
   border: 1px solid var(--white);
 
 }
+
+
