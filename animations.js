@@ -84,6 +84,55 @@ const arrowElement = document.querySelector('.arrow-animation');
 
 arrowObserver.observe(arrowElement);
 
+
+
+
+
+// PERCENTAGE FUNCTION COUNTING
+
+const percentageElement = document.querySelector(".percentage");
+const targetPercentage = 42; 
+
+function countPercentage() {
+  let currentPercentage = 1;
+  const increment = 1; 
+  const duration = 2000; 
+
+  const interval = duration / (targetPercentage - currentPercentage) * increment;
+
+  const count = setInterval(function () {
+      currentPercentage += increment;
+      percentageElement.textContent = currentPercentage + "%";
+
+      if (currentPercentage >= targetPercentage) {
+          clearInterval(count);
+      }
+  }, interval);
+}
+
+
+const percentObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log('percent visible');
+        countPercentage();
+      } 
+  });
+}, {
+  threshold: 0.7,  
+});
+
+
+
+percentObserver.observe(percentageElement);
+
+
+
+
+
+
+
+
 //SCREEN FUNCTION
 
 const screenObserver = new IntersectionObserver((entries) => {
@@ -126,4 +175,6 @@ const sections = document.querySelectorAll('section')
 //what to observe
 
 sections.forEach((el) => sectionObserver.observe(el));
+
+
 

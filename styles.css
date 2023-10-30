@@ -402,7 +402,7 @@ img#product.show {
   font-size: 96px;
   font-weight: bold;
   color: var(--yellow); 
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black; 
   line-height: 1;
 }
@@ -431,7 +431,7 @@ img#product.show {
 /* PASSWORD OVERLAY */
 
 .content {
-  display: none; /* Initially hide content */
+  display: block; /* Initially hide content */
 }
 
 

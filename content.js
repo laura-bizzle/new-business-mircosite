@@ -79,7 +79,7 @@ const helpHTML = `
 `
 
 const statsHTML = `
-    <h2><span class="percentage">42%</span><br>of participants expressed that they faced challenges in assessing clothing sizing accurately</h2>
+    <h2><span class="percentage">1%</span><br>of participants expressed that they faced challenges in assessing clothing sizing accurately</h2>
     <div class="main-para">
         <p>To assess the user experience quality of ${client.name}'s website, we undertook a comprehensive CRO audit. Our goal was to pinpoint any areas of performance that could be enhanced. </p>
         <p>This involved a meticulous analysis of your analytics, a deep dive into the user journey funnel, and rigorous usability testing involving 50 participants. Our aim was to uncover valuable insights that could lead to significant improvements for your website.</p>
@@ -89,8 +89,6 @@ const statsHTML = `
 const heroSection = document.getElementById("hero");
 heroSection.insertAdjacentHTML("afterbegin", heroHTML);
 heroSection.style.backgroundImage = `url(${client.heroImg})`
-document.querySelector('.overlay').style.backgroundImage = `url(${client.heroImg})`
-document.querySelector('.overlay').style.background = `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;`
 
 
 
