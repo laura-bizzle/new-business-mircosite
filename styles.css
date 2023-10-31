@@ -356,8 +356,11 @@ svg.arrow-animation {
 }
 
 .patagonia-logo-svg {
+  background-image: url(/images/patagonia-yellow.svg);
   /* filter: invert(88%) sepia(85%) saturate(2467%) hue-rotate(338deg) brightness(107%) contrast(101%); */
-  max-width: 95px;
+  height: 50px;
+    width: 200px;
+    background-repeat: no-repeat;
 }
 
 .screens-wrap {
@@ -420,6 +423,7 @@ img#product.show {
   transition: all 1s;
   /* transition-delay: 1s; */
 }
+
 
 .main-para p:nth-child(2) {
   margin-top: 20px;
@@ -533,6 +537,7 @@ footer a {
 .footer-link {
   display: flex ;
   flex-direction: column;
+  width: 25%;
 }
 
 .footer-logo {
@@ -541,6 +546,17 @@ footer a {
   height: 100%;
   width: 100%;
 }
+
+@media (prefers-color-scheme: dark) {
+
+  footer a {
+    color: var(--white);
+  }
+  
+}
+
+
+
 
 @media only screen and (max-width: 800px)  {
   img.video-desktop {
@@ -556,7 +572,7 @@ footer a {
 
     /* GLOBAL */
 
-  section {
+  section, footer {
     padding: 6rem;
   }
 
@@ -578,7 +594,7 @@ svg.down-arrow {
 /* CLOCK */
 
 section#clock {
-  height: 60vh;
+  height: 70vh;
 }
 
 
@@ -608,7 +624,6 @@ img.video-desktop {
   filter: blur(5px);
   transform: translateX(130%);
   transition: all 1s;
-  /* transition-delay: 1s; */
 }
   
 
@@ -635,6 +650,92 @@ section#about {
 svg.arrow-animation {
   transform: rotate(185deg);
   align-self: flex-end;
+}
+/* HELP */
+
+.screens-wrap {
+  display: none;
+}
+
+section#help {
+  display: flex;
+}
+
+.right-help {
+  width: 50%;
+  height: 100%;
+  background: black;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.left-help {
+  position: relative;
+  height: 500px;
+  padding-top: 20px;
+  margin-bottom: 30px; 
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.right-help .main-para {
+  transform:translateX(120%)
+}
+
+.right-help .main-para.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+.screens-wrap-desktop {
+  max-width: 400px;
+  position: relative;
+}
+
+.screen-desktop {
+  transition: all 1s ease;
+}
+
+img#basket-desktop {
+  position: absolute;
+  transform: translateX(-250%) translateY(60%);
+  transition: all 1s ease-in-out;
+  bottom: 0;
+  z-index: 1;
+  right: 0;
+  opacity: 0;
+}
+
+img#basket-desktop.show {
+  transform: translateX(0) translateY(0);
+  opacity: 1; 
+}
+
+img#product-desktop {
+  position: absolute;
+  transform: translateX(-250%) translateY(10%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  
+}
+
+img#product-desktop.show {
+  transform: translateX(0) translateY(0);
+  left: 20px;
+  opacity: 1;
+}
+
+
+
+section#help {
+    height: 60vh;
 }
 
 /* STATS */

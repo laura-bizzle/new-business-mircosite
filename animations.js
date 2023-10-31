@@ -143,6 +143,7 @@ const screenObserver = new IntersectionObserver((entries) => {
         el.classList.add('show');
       }
       )
+      
     }
   })
 }, {
@@ -156,6 +157,30 @@ const screenElements = document.querySelector('.screens-wrap')
 
 screenObserver.observe(screenElements);
 
+
+//SCREEN FUNCTION
+
+const screenDesktopObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      console.log('screens visible');
+      entry.target.querySelectorAll('.screen-desktop').forEach((el) => {
+        el.classList.add('show');
+      }
+      )
+    }
+  })
+}, {
+  threshold: 0.7,
+  rootMargin: "0px",
+  root: null
+
+});
+
+const screenDesktopElements = document.querySelector('.screens-wrap-desktop')
+
+screenDesktopObserver.observe(screenDesktopElements);
+
 //ALL SECTIONS PARAGRAPHS FUNCTION
 
 const sectionObserver = new IntersectionObserver((entries) => {
@@ -168,7 +193,8 @@ const sectionObserver = new IntersectionObserver((entries) => {
          
       } else {
           entry.target.querySelector('.main-para').classList.remove('show');
-         // entry.target.querySelector('.desktop-para').classList.remove('show');
+          if(entry.target.querySelector('.desktop-para')){
+         entry.target.querySelector('.desktop-para').classList.remove('show'); }
       }
   });
 }, {
