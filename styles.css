@@ -189,6 +189,7 @@ svg#op-svg {
       width: 50px;
       height: 50px;
       animation: jump 1.5s 3s ease-in-out 3;
+      cursor: pointer;
     }
     
     @keyframes jump {
@@ -523,11 +524,14 @@ button.password-btn {
 
 }
 
-/* FOOTER */
+/* FOOTER MOBILE * GLOBAL */
 
 footer {
   height: 200px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
 footer a {
@@ -537,15 +541,27 @@ footer a {
 .footer-link {
   display: flex ;
   flex-direction: column;
-  width: 25%;
+  width: 50%;
+  align-items: flex-end;
 }
+
 
 .footer-logo {
   background-image: url(/images/OP-Logo-Footer-Yellow.svg);
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+  width: 90px;
+  height: 90px;
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (prefers-color-scheme: dark) {
 
@@ -559,20 +575,19 @@ footer a {
 
 
 @media only screen and (max-width: 800px)  {
-  img.video-desktop {
+
+  img.video-desktop, .desktop-para, .screens-wrap-desktop {
     display: none;
-  }
-  
-  .desktop-para {
-    display: none;
-  }
+}
+
+
   
 }
 @media only screen and (min-width: 800px)  {
 
     /* GLOBAL */
 
-  section, footer {
+  section {
     padding: 6rem;
   }
 
@@ -750,6 +765,23 @@ section#stats h2 {
   font-size: 24px;
   max-width: 300px;
 }
+
+/* FOOTER  */
+
+footer {
+  padding: 0 6rem;
+}
+
+
+.footer-logo {
+  width: 150px;
+  height: 150px;
+  
+}
+
+
+
+
 
 }
 
