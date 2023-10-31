@@ -17,6 +17,10 @@
     padding: 50px;
   }
 
+  .content {
+    overflow: hidden;
+  }
+
 
   body, h2 {
     font-family: 'Poppins', sans-serif;
@@ -354,6 +358,7 @@ svg.arrow-animation {
 
 .help-title {
   margin-bottom: 0;
+  align-self: start;
 }
 
 .patagonia-logo-svg {
@@ -364,11 +369,19 @@ svg.arrow-animation {
     background-repeat: no-repeat;
 }
 
+.right-help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 .screens-wrap {
   position: relative;
   height: 500px;
   padding-top: 20px;
   margin-bottom: 30px; 
+  max-width: 400px;
+  align-self: center;
 }
 
 .screen {
@@ -378,10 +391,10 @@ svg.arrow-animation {
 img#basket {
   position: absolute;
   transform: translateX(110%) translateY(50%);
-  transition: transform 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   bottom: 0;
   z-index: 1;
-  right: 0;
+  left: -10px;
   opacity: 0;
 }
 
@@ -400,8 +413,24 @@ img#product {
 
 img#product.show {
   transform: translateX(0) translateY(0);
-  left: 0;
+  right: 0;
   opacity: 1;
+}
+
+@media only screen and (max-width: 400px)  {
+
+  img#product, img#basket {
+    scale: 85%;
+}
+
+img#product.show {
+  right: -30px;
+}
+
+img#basket.show {
+  left: -30px;
+}
+
 }
 
 /* STATS */ 
@@ -588,7 +617,7 @@ footer a {
     /* GLOBAL */
 
   section {
-    padding: 6rem;
+    padding: 3rem;
   }
 
   h2 {
@@ -650,22 +679,28 @@ img.video-desktop {
 
 section#about {
   display: flex;
+  gap: 40px;
 }
 
-.desktop-wrap, .desktop-para.show {
-  width: 50%;
+.desktop-wrap {
+  width: 40%;
+}
+
+.desktop-para.show {
+  width: 60%;
 }
 
 .svg-cont {
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  max-height: 120px;
+  flex-direction: column-reverse;
+  justify-content: left;
 }
 
 svg.arrow-animation {
   transform: rotate(185deg);
   align-self: flex-end;
 }
+
+
 /* HELP */
 
 .screens-wrap {
@@ -674,7 +709,12 @@ svg.arrow-animation {
 
 section#help {
   display: flex;
+  height: 70vh;
+  gap: 40px;
+  align-items: center;
 }
+
+
 
 .right-help {
   width: 50%;
@@ -710,8 +750,9 @@ section#help {
 
 
 .screens-wrap-desktop {
-  max-width: 400px;
+  width: 400px;
   position: relative;
+  /* background-color: aqua; */
 }
 
 .screen-desktop {
@@ -749,9 +790,7 @@ img#product-desktop.show {
 
 
 
-section#help {
-    height: 60vh;
-}
+
 
 /* STATS */
 
@@ -780,9 +819,26 @@ footer {
 }
 
 
+}
 
+@media only screen and (min-width: 1000px)  {
 
+  section {
+    padding: 6rem;
+  }
 
+  .svg-cont {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    max-height: 120px;
+  }
+  
+  svg.arrow-animation {
+    transform: rotate(185deg);
+    align-self: flex-end;
+  }
+
+ 
 }
 
 
