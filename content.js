@@ -47,7 +47,7 @@ const aboutHTML = `
         <div class="main-para mobile-para">
             <p>Open Partners is an agency, like algorithms, that is constantly evolving. We are created without legacy to thrive both in today’s conditions and for the unexpected needs of tomorrow, working in chorus throughout the marketing funnel. We are free from silos and think holistically at pace and scale. We give our people freedom, fostering a culture that empowers the most talented people to do their best work.</p>
         </div>
-        <img class="video-mobile" src="/images/video-placeholder.png" alt="">
+        <img class="video-mobile" src="images/video-placeholder.png" alt="">
         <div class="svg-cont">
             <svg class="arrow-animation" xmlns="http://www.w3.org/2000/svg" width="125" height="138" viewBox="0 0 294 138" fill="none">
             <path class="loop" d="M193 127.161C161 160.221 63.1999 103.677 108 50.7801C139.862 13.1599 170.5 59.9923 144 94.1007C121.761 122.725 32.5 109.741 31.5 6" stroke="black" />
