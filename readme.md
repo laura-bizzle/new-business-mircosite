@@ -26,10 +26,12 @@ A template to pitch to new business, a more interactive solution to the old scho
 - [] Better hero image
 - [] Add video on desktop & mobile 
 - [x] Ensure all images are located in correct file paths
+- [x] Change animation to js to let password work
 - [] Main CTA 
 - [] Margins & paddings on desktop & tablet 
 - [] Responsive checks on all animations & styles 
 - [] Social icons & links in footer
+- [] Change figure on clock 
 
 ### Performance 
 
@@ -41,6 +43,7 @@ A template to pitch to new business, a more interactive solution to the old scho
 ### Nice to haves 
 
 - [] Lark tweeting 
+- [] change incorrect password alert 
 
 
 
