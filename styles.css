@@ -506,7 +506,7 @@ img#basket.show {
   left: -20px;
   width: calc(100% + 40px);
   height: calc(100% + 40px);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("images/hero_img.png"), lightgray 50% / cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("https://images.pexels.com/photos/2076968/pexels-photo-2076968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"), lightgray 50% / cover no-repeat;
   filter: blur(10px);
   z-index: 1;
 }
@@ -636,7 +636,9 @@ footer a {
   /* HERO */
 
 header#hero {
-  background-position: center;
+  background-position-x: 55%;
+  background-position-y: 10%;
+  background-size: 110%;
 }
 
 svg.down-arrow {

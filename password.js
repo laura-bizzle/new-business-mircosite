@@ -14,6 +14,7 @@ function checkPassword() {
     const content = document.querySelector('.content');
 
     if (input.value === correctPassword) {
+        document.body.style.overflow = 'auto';
         overlay.style.display = 'none';
         content.style.display = 'block';
         
@@ -22,7 +23,7 @@ function checkPassword() {
             letter.style.animation = `upAndDown 2s ${index * 0.1}s`;
         });
         
-       // document.querySelector('.op-logo').style.animation = 'someAnimation 1s';  // Define someAnimation in your CSS
+    // document.querySelector('.op-logo').style.animation = 'someAnimation 1s';  // Define someAnimation in your CSS
         
         document.querySelector('.x').style.animation = 'spinny 0.4s 2.2s 1 forwards';
         
@@ -38,3 +39,8 @@ function checkPassword() {
 
 document.querySelector('.overlay').style.backgroundImage = `url(${client.heroImg})`
 document.querySelector('.overlay').style.background = `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;`
+
+
+window.onload = function() {
+    document.body.style.overflow = 'hidden';
+}
