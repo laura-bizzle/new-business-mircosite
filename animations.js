@@ -144,6 +144,11 @@ const screenObserver = new IntersectionObserver((entries) => {
       }
       )
       
+    } else {
+      entry.target.querySelectorAll('.screen').forEach((el) => {
+        el.classList.remove('show');
+      }
+      )
     }
   })
 }, {
@@ -158,7 +163,7 @@ const screenElements = document.querySelector('.screens-wrap')
 screenObserver.observe(screenElements);
 
 
-//SCREEN FUNCTION
+//SCREEN FUNCTION DESKTOP
 
 const screenDesktopObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -168,7 +173,12 @@ const screenDesktopObserver = new IntersectionObserver((entries) => {
         el.classList.add('show');
       }
       )
-    }
+    } else {
+      entry.target.querySelectorAll('.screen-desktop').forEach((el) => {
+        el.classList.remove('show');
+      }
+      )
+  }
   })
 }, {
   threshold: 0.7,
