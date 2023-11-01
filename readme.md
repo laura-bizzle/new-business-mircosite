@@ -3,7 +3,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-    <img src="images/op_logo.png" alt="Logo" width="80" height="80">
+    <img src="images/op_logo.png" alt="Logo" width="80" height="auto">
   </a>
 
 ## New Business Microsite Template
@@ -23,6 +23,11 @@ A template to pitch to new business, a more interactive solution to the old scho
 
 ## Outstanding to do 
 
+
+[] Ensure all images are located in correct file paths
+[] Performance - images
+[] Performance - SEO 
+[] Performance - images 
 
 
 
