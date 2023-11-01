@@ -24,7 +24,7 @@ A template to pitch to new business, a more interactive solution to the old scho
 ## Outstanding to do 
 
 
-[] Ensure all images are located in correct file paths
+[x] Ensure all images are located in correct file paths
 [] Performance - images
 [] Performance - SEO 
 [] Performance - images 

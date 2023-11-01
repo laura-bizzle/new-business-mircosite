@@ -362,7 +362,7 @@ svg.arrow-animation {
 }
 
 .patagonia-logo-svg {
-  background-image: url(/images/patagonia-yellow.svg);
+  background-image: url(images/patagonia-yellow.svg);
   /* filter: invert(88%) sepia(85%) saturate(2467%) hue-rotate(338deg) brightness(107%) contrast(101%); */
   height: 50px;
     width: 200px;
@@ -576,7 +576,7 @@ footer a {
 
 
 .footer-logo {
-  background-image: url(/images/OP-Logo-Footer-Yellow.svg);
+  background-image: url(images/OP-Logo-Footer-Yellow.svg);
   background-repeat: no-repeat;
   width: 90px;
   height: 90px;
