@@ -3,7 +3,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-    <img src="images/op_logo.png" alt="Logo" width="80" height="auto">
+    <img src="images/op_logo.png" alt="Logo" width="200" height="auto">
   </a>
 
 ## New Business Microsite Template
@@ -23,11 +23,24 @@ A template to pitch to new business, a more interactive solution to the old scho
 
 ## Outstanding to do 
 
+- [] Better hero image
+- [] Add video on desktop & mobile 
+- [x] Ensure all images are located in correct file paths
+- [] Main CTA 
+- [] Margins & paddings on desktop & tablet 
+- [] Responsive checks on all animations & styles 
+- [] Social icons & links in footer
 
-[x] Ensure all images are located in correct file paths
-[] Performance - images
-[] Performance - SEO 
-[] Performance - images 
+### Performance 
+
+- [] Performance - images
+- [] Performance - SEO 
+- [] Performance - images 
+- [] Once finished - copy in to react 
+
+### Nice to haves 
+
+- [] Lark tweeting 
 
 
 
