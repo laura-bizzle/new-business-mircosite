@@ -20,7 +20,10 @@ function checkPassword() {
         setTimeout(function () {
             overlay.classList.add('hide');
           }, 200); // 1000 milliseconds = 1 second
-        // overlay.style.display = 'none';
+          setTimeout(function () {
+            overlay.style.display = 'none';
+          }, 700);
+        // 
         // content.style.display = 'block';
         
         // Add animations
