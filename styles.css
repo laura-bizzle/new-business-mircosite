@@ -558,8 +558,15 @@ button.password-btn {
   color: var(--black);
   background-color: var(--white);
   border: 1px solid var(--white);
-
+  cursor: pointer;
 }
+
+button.password-btn:hover {
+  color: white;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+}
+
 
 .overlay-content {
   max-width: 300px;
