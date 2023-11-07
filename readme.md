@@ -32,6 +32,7 @@ A template to pitch to new business, a more interactive solution to the old scho
 - [ ] Responsive checks on all animations & styles 
 - [ ] Social icons & links in footer
 - [ ] Change figure on clock 
+- [ ] Hover on any btns (remember passwrd has btn)
 
 ### Performance 
 
