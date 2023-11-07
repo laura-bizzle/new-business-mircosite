@@ -12,11 +12,16 @@ function checkPassword() {
     const input = document.getElementById('password-input');
     const overlay = document.getElementById('overlay');
     const content = document.querySelector('.content');
+    const overlayContent = document.querySelector('.overlay-content')
 
     if (input.value === correctPassword) {
         document.body.style.overflow = 'auto';
-        overlay.style.display = 'none';
-        content.style.display = 'block';
+        overlayContent.classList.add('hide');
+        setTimeout(function () {
+            overlay.classList.add('hide');
+          }, 200); // 1000 milliseconds = 1 second
+        // overlay.style.display = 'none';
+        // content.style.display = 'block';
         
         // Add animations
         document.querySelectorAll('.letters').forEach((letter, index) => {

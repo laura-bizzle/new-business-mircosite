@@ -561,6 +561,26 @@ button.password-btn {
 
 }
 
+.overlay-content {
+  max-width: 300px;
+  transition: rotate 400ms, scale 200ms;
+
+}
+
+.overlay-content.hide {
+rotate: y 90deg;
+scale: 1.02;
+}
+
+div#overlay {
+  transition: opacity 600ms;
+}
+
+div#overlay.hide {
+opacity: 0;
+}
+
+
 /* FOOTER MOBILE * GLOBAL */
 
 footer {
@@ -921,5 +941,7 @@ section#help {
 }
 
 }
+
+
 
 
