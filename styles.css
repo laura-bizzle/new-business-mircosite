@@ -684,12 +684,25 @@ animation-delay: 0.75s;
 button.cta-btn {
   color: var(--black);
   background-color: var(--bright-green);
-  border: 1px solid var(--black);
+  border: 2px solid var(--black);
+  font-weight: 600;
+  transition: all 400ms;
 }
 
 button.cta-btn:hover {
   background-color: var(--black);
-  border: 1px solid var(--bright-green);
+  
+  color: var(--bright-green);
+}
+
+#CTA h2 {
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black; 
+color: white;
+}
+
+#CTA h2 span {
+color: black;
 }
 
 
