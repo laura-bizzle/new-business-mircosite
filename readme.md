@@ -26,6 +26,7 @@ A template to pitch to new business, a more interactive solution to the old scho
 - [ ] Better hero image
 - [ ] Main CTA 
 - [ ] Hover on any btns 
+- [ ] ipad air image not right
 - [x] Ensure all images are located in correct file paths
 - [x] Change animation to js to let password work
 - [x] Margins & paddings on desktop & tablet 

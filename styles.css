@@ -717,7 +717,7 @@ button.cta-btn:hover {
     /* GLOBAL */
 
   section {
-    padding: 3rem;
+    padding: 3rem 6rem;
   }
 
   h2 {
@@ -954,11 +954,19 @@ footer {
 
 @media only screen and (min-width: 1500px) {
 section {
-  padding: 6rem 10rem;
+  padding: 6rem 15rem;
+}
+
+footer {
+  padding: 0 15rem;
 }
 
 section#help {
   padding: 0 10rem;
+}
+
+section#stats h2 {
+  max-width: 450px;
 }
 
 }
