@@ -24,9 +24,10 @@ A template to pitch to new business, a more interactive solution to the old scho
 ## Outstanding to do 
 
 - [ ] Better hero image that includes a person - I like the placement and general vibe but thing it needs a fashion element. 
-- [ ] Main CTA 
-- [ ] Hover on any btns 
-- [ ] ipad air image not right
+
+- [x] Hover on any btns 
+- [x] ipad air image not right
+- [x] Main CTA 
 - [x] Ensure all images are located in correct file paths
 - [x] Change animation to js to let password work
 - [x] Margins & paddings on desktop & tablet 
