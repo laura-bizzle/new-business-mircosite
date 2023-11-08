@@ -24,6 +24,7 @@ A template to pitch to new business, a more interactive solution to the old scho
 ## Outstanding to do 
 
 - [ ] Better hero image that includes a person - I like the placement and general vibe but thing it needs a fashion element. 
+- [ ] password popup cookie 
 
 - [x] Hover on any btns 
 - [x] ipad air image not right
@@ -46,6 +47,7 @@ A template to pitch to new business, a more interactive solution to the old scho
 - [ ] Performance - images 
 - [x] add aria labels to links 
 - [x] remove the browser error
+- [x] meta description
 
 
 ### React

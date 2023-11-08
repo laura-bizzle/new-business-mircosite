@@ -7,14 +7,18 @@
     --bright-green: #00f14c;
   }
 
-  /* For password */
+  .alert {
+    background : red;
+    color : white;
+    text-align: center;
+  }
+
+  /* ----------For password  ---------- */
   .content {
     display: none;
   }
 
-    /* HERO */
-
-  /* Poppins font */
+  /* ----------Poppins font  ---------- */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
@@ -55,6 +59,47 @@
       padding: 10px 20px;
   }
 
+  /* ----------ALL SECTIONS  ---------- */
+
+.main-para {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  /* ----------transition-delay: 1s;  ---------- */
+}
+
+
+.main-para p:nth-child(2) {
+  margin-top: 20px;
+}
+
+.desktop-para p:nth-child(2) {
+  margin-top: 20px;
+}
+
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+@media only screen and (min-width: 800px)  {
+
+  /* ----------GLOBAL  ---------- */
+
+section {
+  padding: 3rem 6rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+}
+
   .black-text {
     color: var(--black);
   }
@@ -87,7 +132,7 @@
     background-color: var(--white);
   }
 
-/* HERO */
+/* ----------HERO  ---------- */
 
 header#hero {
     background-size: cover;
@@ -125,38 +170,13 @@ svg#op-svg {
 }
 
 .letters {
-  /* animation: upAndDown 2s ; */
+  /* ----------animation: upAndDown 2s ;  ---------- */
 }
 
 .op-logo {
   max-height: 61px;
 }
 
-/* .letters:nth-of-type(1) { animation-delay: 0.2s; }
-.letters:nth-of-type(2) { animation-delay: 0.4s; }
-.letters:nth-of-type(3) { animation-delay: 0.6s; }
-.letters:nth-of-type(4) { animation-delay: 0.8s; }
-.letters:nth-of-type(5) { animation-delay: 1s; }
-.letters:nth-of-type(6) { animation-delay: 1.2s; }
-.letters:nth-of-type(7) { animation-delay: 1.4s; }
-.letters:nth-of-type(8) { animation-delay: 1.6s; }
-.letters:nth-of-type(9) { animation-delay: 1.8s; }
-.letters:nth-of-type(10) { animation-delay: 2s; }
-.letters:nth-of-type(11) { animation-delay: 2.2s; }
-.letters:nth-of-type(12) { animation-delay: 2.4s; } */
-
-/* .letters:nth-of-type(1) { animation-delay: 0.1s; }
-.letters:nth-of-type(2) { animation-delay: 0.2s; }
-.letters:nth-of-type(3) { animation-delay: 0.3s; }
-.letters:nth-of-type(4) { animation-delay: 0.4s; }
-.letters:nth-of-type(5) { animation-delay: 0.5s; }
-.letters:nth-of-type(6) { animation-delay: 0.6s; }
-.letters:nth-of-type(7) { animation-delay: 0.7s; }
-.letters:nth-of-type(8) { animation-delay: 0.8s; }
-.letters:nth-of-type(9) { animation-delay: 0.9s; }
-.letters:nth-of-type(10) { animation-delay: 1s; }
-.letters:nth-of-type(11) { animation-delay: 1.1s; }
-.letters:nth-of-type(12) { animation-delay: 1.2s; } */
 
       @keyframes upAndDown {
         0%, 100% {
@@ -172,7 +192,7 @@ svg#op-svg {
     }
 
     .x {
-      /* animation: spinny 0.4s 2.2s 1 forwards; */
+      /* ----------animation: spinny 0.4s 2.2s 1 forwards;  ---------- */
       opacity: 0;
       font-size: 30px;
     }
@@ -189,7 +209,7 @@ svg#op-svg {
     
 
     .pata-logo {
-      /* animation: grow 0.4s 2.5s 1 forwards; */
+      /* ----------animation: grow 0.4s 2.5s 1 forwards;  ---------- */
       opacity: 0;
     }
 
@@ -210,7 +230,7 @@ svg#op-svg {
       bottom: 0;
       width: 50px;
       height: 50px;
-      /* animation: jump 1.5s 3s ease-in-out 3; */
+      /* ----------animation: jump 1.5s 3s ease-in-out 3;  ---------- */
       cursor: pointer;
     }
     
@@ -227,9 +247,16 @@ svg#op-svg {
     }
 
 
+    @media only screen and (min-width: 800px)  {
+
+      svg.down-arrow {
+        bottom: 50px;
+      }
+    }
+
     
       
-/* CLOCK */
+/* ----------CLOCK  ---------- */
 
 #clock {
     display: flex;
@@ -276,12 +303,30 @@ svg#op-svg {
     width: 246px;
     height: 246px;
     border-radius: 100%;
-    /*   background: pink; */
+    /* ----------  background: pink;  ---------- */
     position: relative;
     margin-bottom: 50px;
   }
 
-/* ABOUT */
+
+  @media only screen and (min-width: 800px)  {
+
+
+    /* ----------CLOCK  ---------- */
+    
+    section#clock {
+      height: 70vh;
+    }
+    
+    
+    section#clock p{
+      max-width: 40vw;
+      text-align: center;
+      
+    }
+  }
+
+/* ----------ABOUT  ---------- */
 
 .video-mobile {
     max-width: 100%;
@@ -297,8 +342,67 @@ svg#op-svg {
 
 
 
+@media only screen and (min-width: 800px)  {
 
-/* ARROW ANIMATION */
+
+  /* ----------ABOUT  ---------- */
+  
+  img.video-mobile {
+    display: none;
+  }
+  
+  img.video-desktop {
+    width: 100%;
+  }
+  
+  
+  .desktop-wrap p {
+    display: none;
+  }
+  
+  .desktop-para {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(130%);
+    transition: all 1s;
+  }
+    
+  
+  .desktop-para.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  section#about {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .desktop-wrap {
+    width: 40%;
+  }
+  
+  .desktop-para.show {
+    width: 60%;
+  }
+  
+  .svg-cont {
+    flex-direction: column-reverse;
+    justify-content: left;
+  }
+  
+  svg.arrow-animation {
+    transform: rotate(185deg);
+    align-self: flex-end;
+  }
+
+}
+
+
+
+
+/* ----------ARROW ANIMATION  ---------- */
 
 svg.arrow-animation {
     max-height: 63px;
@@ -312,7 +416,7 @@ svg.arrow-animation {
 }
   
   .loop {
-    /* Set the initial color of the path */
+    /* ----------Set the initial color of the path  ---------- */
     fill: transparent;
     stroke: none;
       }
@@ -320,7 +424,7 @@ svg.arrow-animation {
   .loop-play {
     stroke-width: 5;
     stroke: #000; 
-    transition: stroke 4s linear; /* Transition to fill the stroke */
+    transition: stroke 4s linear; /* ----------Transition to fill the stroke  ---------- */
     animation-name: loopAnimation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
@@ -328,17 +432,17 @@ svg.arrow-animation {
   
   @keyframes loopAnimation {
     0% {
-      stroke-dasharray: 1000; /* Set the initial dash length */
-      stroke-dashoffset: 1000; /* Offset to make it invisible */
+      stroke-dasharray: 1000; /* ----------Set the initial dash length  ---------- */
+      stroke-dashoffset: 1000; /* ----------Offset to make it invisible  ---------- */
     }
   
     80% {
       stroke-dasharray: 1000;
-      stroke-dashoffset: 0; /* Offset to make it visible */
+      stroke-dashoffset: 0; /* ----------Offset to make it visible  ---------- */
     }
     100% {
       stroke-dasharray: 1000;
-      stroke-dashoffset: 0; /* Offset to make it visible */
+      stroke-dashoffset: 0; /* ----------Offset to make it visible  ---------- */
     }
   }
   
@@ -373,7 +477,7 @@ svg.arrow-animation {
 
 
 
-/* HELP */
+/* ----------HELP  ---------- */
 
 .help-title {
   margin-bottom: 0;
@@ -382,7 +486,7 @@ svg.arrow-animation {
 
 .patagonia-logo-svg {
   background-image: url(images/patagonia-yellow.svg);
-  /* filter: invert(88%) sepia(85%) saturate(2467%) hue-rotate(338deg) brightness(107%) contrast(101%); */
+  /* ----------filter: invert(88%) sepia(85%) saturate(2467%) hue-rotate(338deg) brightness(107%) contrast(101%);  ---------- */
   height: 30px;
     width: 200px;
     background-repeat: no-repeat;
@@ -452,7 +556,108 @@ img#basket.show {
 
 }
 
-/* STATS */ 
+@media only screen and (min-width: 800px)  {
+
+
+  /* ----------HELP  ---------- */
+  
+  .screens-wrap {
+    display: none;
+  }
+  
+  section#help {
+    display: flex;
+    height: 70vh;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  
+  
+  .right-help {
+    width: 50%;
+    height: 100%;
+    background: black;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .left-help {
+    position: relative;
+    height: 500px;
+    padding-top: 20px;
+    margin-bottom: 30px; 
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right-help .main-para {
+    transform:translateX(120%)
+  }
+  
+  .right-help .main-para.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  
+  .screens-wrap-desktop {
+    width: 400px;
+    position: relative;
+    /* ----------background-color: aqua;  ---------- */
+  }
+  
+  .screen-desktop {
+    transition: all 1s ease;
+  }
+  
+  img#basket-desktop {
+    position: absolute;
+    transform: translateX(-250%) translateY(60%);
+    transition: all 1s ease-in-out;
+    bottom: 0;
+    z-index: 1;
+    right: 0;
+    opacity: 0;
+  }
+  
+  img#basket-desktop.show {
+    transform: translateX(0) translateY(0);
+    opacity: 1; 
+  }
+  
+  img#product-desktop {
+    position: absolute;
+    transform: translateX(-250%) translateY(10%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    
+  }
+  
+  img#product-desktop.show {
+    transform: translateX(0) translateY(0);
+    left: 20px;
+    opacity: 1;
+  }
+  
+  h2.yellow-text.help-title {
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  
+  .patagonia-logo-svg {
+    margin-bottom: 15px;
+    
+  }
+}  
+
+/* ----------STATS  ---------- */ 
 
 .percentage {
   font-size: 96px;
@@ -463,36 +668,31 @@ img#basket.show {
   line-height: 1;
 }
 
-/* ALL SECTIONS */
+@media only screen and (min-width: 800px)  {
 
-.main-para {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-  /* transition-delay: 1s; */
+
+
+  /* ----------STATS  ---------- */
+  
+  section#stats {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+  }
+  
+  section#stats h2 {
+    font-size: 24px;
+    max-width: 300px;
+  }
+
 }
 
 
-.main-para p:nth-child(2) {
-  margin-top: 20px;
-}
 
-.desktop-para p:nth-child(2) {
-  margin-top: 20px;
-}
-
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-/* PASSWORD OVERLAY */
+/* ----------PASSWORD OVERLAY  ---------- */
 
 .content {
-  display: block; /* Initially hide content */
+  display: block; /* ----------Initially hide content  ---------- */
 }
 
 
@@ -595,7 +795,7 @@ opacity: 0;
 }
 
 
-/* FOOTER MOBILE * GLOBAL */
+/* ----------FOOTER  * GLOBAL  ---------- */
 
 footer {
   height: 200px;
@@ -622,12 +822,12 @@ footer a:hover {
 }
 
 
-/* .footer-logo {
+/* ----------.footer-logo {
   background-image: url(images/OP-Logo-Footer-Yellow.svg);
   background-repeat: no-repeat;
   width: 90px;
   height: 90px;
-} */
+}  ---------- */
 
 img.pata-logo {
   width: 200px;
@@ -692,13 +892,20 @@ img.pata-logo {
 animation-delay: 0.75s;
 }
 
+@media only screen and (min-width: 800px)  {
+  footer {
+    padding: 0 6rem;
+  }
+  
+}
 
-/* CTA MOBILE * GLOBAL */
+
+/* --------- CTA  SECTION  ---------- */
 
 
 button.cta-btn {
   color: var(--black);
-  background-color: var(--bright-green);
+  background-color: var(--yellow);
   border: 2px solid var(--black);
   font-weight: 600;
   transition: all 400ms;
@@ -707,7 +914,7 @@ button.cta-btn {
 button.cta-btn:hover {
   background-color: var(--black);
   
-  color: var(--bright-green);
+  color: var(--yellow);
 }
 
 #CTA h2 {
@@ -744,215 +951,16 @@ color: black;
 }
 @media only screen and (min-width: 800px)  {
 
-    /* GLOBAL */
 
-  section {
-    padding: 3rem 6rem;
-  }
 
-  h2 {
-    font-size: 40px;
-}
-  
-
-  /* HERO */
+/* ----------  FOOTER   ---------- */
 
 
 
-svg.down-arrow {
-  bottom: 50px;
-}
-
-/* CLOCK */
-
-section#clock {
-  height: 70vh;
-}
-
-
-section#clock p{
-  max-width: 40vw;
-  text-align: center;
-  
-}
-
-/* ABOUT */
-
-img.video-mobile {
-  display: none;
-}
-
-img.video-desktop {
-  width: 100%;
-}
-
-
-.desktop-wrap p {
-  display: none;
-}
-
-.desktop-para {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(130%);
-  transition: all 1s;
-}
-  
-
-.desktop-para.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-section#about {
-  display: flex;
-  gap: 40px;
-}
-
-.desktop-wrap {
-  width: 40%;
-}
-
-.desktop-para.show {
-  width: 60%;
-}
-
-.svg-cont {
-  flex-direction: column-reverse;
-  justify-content: left;
-}
-
-svg.arrow-animation {
-  transform: rotate(185deg);
-  align-self: flex-end;
-}
-
-
-/* HELP */
-
-.screens-wrap {
-  display: none;
-}
-
-section#help {
-  display: flex;
-  height: 70vh;
-  gap: 40px;
-  align-items: center;
-}
-
-
-
-.right-help {
-  width: 50%;
-  height: 100%;
-  background: black;
-  position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-.left-help {
-  position: relative;
-  height: 500px;
-  padding-top: 20px;
-  margin-bottom: 30px; 
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.right-help .main-para {
-  transform:translateX(120%)
-}
-
-.right-help .main-para.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-
-.screens-wrap-desktop {
-  width: 400px;
-  position: relative;
-  /* background-color: aqua; */
-}
-
-.screen-desktop {
-  transition: all 1s ease;
-}
-
-img#basket-desktop {
-  position: absolute;
-  transform: translateX(-250%) translateY(60%);
-  transition: all 1s ease-in-out;
-  bottom: 0;
-  z-index: 1;
-  right: 0;
-  opacity: 0;
-}
-
-img#basket-desktop.show {
-  transform: translateX(0) translateY(0);
-  opacity: 1; 
-}
-
-img#product-desktop {
-  position: absolute;
-  transform: translateX(-250%) translateY(10%);
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  
-}
-
-img#product-desktop.show {
-  transform: translateX(0) translateY(0);
-  left: 20px;
-  opacity: 1;
-}
-
-h2.yellow-text.help-title {
-  line-height: 1;
-  margin-bottom: 15px;
-}
-
-.patagonia-logo-svg {
-  margin-bottom: 15px;
-  
-}
-
-
-
-
-/* STATS */
-
-section#stats {
-  display: flex;
-  gap: 72px;
-  align-items: center;
-}
-
-section#stats h2 {
-  font-size: 24px;
-  max-width: 300px;
-}
-
-/* FOOTER  */
-
-footer {
-  padding: 0 6rem;
-}
-
-
-/* .footer-logo {
+/* ----------.footer-logo {
   width: 150px;
   height: 150px;
-} */
+}  ---------- */
 
 
 
