@@ -43,6 +43,7 @@ const clockHTML = `
 
 const aboutHTML = `
     <div class="desktop-wrap">
+    <div class="alert">VIDEO PLACEHOLDERS TO BE REPLACED  </div>
         <h2>Who we are</h2>
         <div class="main-para mobile-para">
             <p>Open Partners is an agency, like algorithms, that is constantly evolving. We are created without legacy to thrive both in today’s conditions and for the unexpected needs of tomorrow, working in chorus throughout the marketing funnel. We are free from silos and think holistically at pace and scale. We give our people freedom, fostering a culture that empowers the most talented people to do their best work.</p>
