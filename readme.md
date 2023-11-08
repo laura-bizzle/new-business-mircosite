@@ -44,6 +44,9 @@ A template to pitch to new business, a more interactive solution to the old scho
 - [ ] Performance - images
 - [ ] Performance - SEO 
 - [ ] Performance - images 
+- [x] add aria labels to links 
+- [x] remove the browser error
+
 
 ### React
 
