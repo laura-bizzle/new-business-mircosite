@@ -3,7 +3,7 @@
 const client = {
   name: "Patagonia",
   logo: "images/patagonia_logo.png",
-  heroImg: "https://images.pexels.com/photos/2076968/pexels-photo-2076968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  heroImg: "https://cdn.shopify.com/s/files/1/0284/7804/6292/files/hs-books-patagonia8.jpg?v=1679643331"
 };
 
 const heroHTML = `

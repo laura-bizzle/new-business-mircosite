@@ -23,7 +23,7 @@ A template to pitch to new business, a more interactive solution to the old scho
 
 ## Outstanding to do 
 
-- [ ] Better hero image
+- [ ] Better hero image that includes a person - I like the placement and general vibe but thing it needs a fashion element. 
 - [ ] Main CTA 
 - [ ] Hover on any btns 
 - [ ] ipad air image not right
@@ -53,6 +53,10 @@ A template to pitch to new business, a more interactive solution to the old scho
 - [x] Lark tweeting 
 - [ ] change incorrect password alert 
 
+
+## Ideas for images
+
+https://cdn.shopify.com/s/files/1/0284/7804/6292/files/hs-books-patagonia8.jpg?v=1679643331
 
 
 <!-- ABOUT THE PROJECT -->
