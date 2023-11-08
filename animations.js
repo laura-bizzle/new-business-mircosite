@@ -196,13 +196,17 @@ screenDesktopObserver.observe(screenDesktopElements);
 const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
       if (entry.isIntersecting) {
+        if(entry.target.querySelector('.main-para')){
           entry.target.querySelector('.main-para').classList.add('show');
+        }
           if(entry.target.querySelector('.desktop-para')){
             entry.target.querySelector('.desktop-para').classList.add('show');
           }
          
       } else {
+        if(entry.target.querySelector('.main-para')){
           entry.target.querySelector('.main-para').classList.remove('show');
+        }
           if(entry.target.querySelector('.desktop-para')){
          entry.target.querySelector('.desktop-para').classList.remove('show'); }
       }
